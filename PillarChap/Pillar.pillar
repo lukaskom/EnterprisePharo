@@ -500,6 +500,13 @@ cases (for example if you have an inter-file link and you export in LaTeX, or if
 
 To create links to external resources, use the ==\*Pharo>http://pharo.org/\*== syntax which is rendered as *Pharo>http://pharo.org/*. The same syntax can also represent email addresses: write ==\*damien@cassou.me\*== to get *damien@cassou.me*.
 
+!!!!Semantic Links
+
+To create links to a youtube or wikipedia page, you can use a semantic link. Instead of ==\*Youtube>https://youtube.com\*== you can write
+==\*Youtube>youtube:\*== and instead of ==\*video>https://www.youtube.com/watch?v=SwdZzvEilCk\*== you write ==\*video>youtube:SwdZzvEilCk\*==.
+In case of wikipedia you can write, in which language is the page supposed to be simply by writing ==\*French atom>wikipedia:Atome|lang=fr\*==
+to get the same as you would writing ==\*French atom>https://fr.wikipedia.org/wiki/Atome\*==. By default the lang parameter is set to 'en'.
+
 !!!Pictures
 
 To include a picture, use the syntax ==\+caption>file://filename|parameters+==:
